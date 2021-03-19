@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      {% for p in posts %}
+        <div>
+          <h3>
+            {{ p.title }}
+            {{ p.slug }}
+            {{ p.author }}
+            {{ p.body }}
+            {{ p.publish }}
+            {{ p.created }}
+            {{ p.updated }}
+            {{ p.status }}
+          </h3>
+        </div>
+      {% endfor %}
+  </body>
+</html>
